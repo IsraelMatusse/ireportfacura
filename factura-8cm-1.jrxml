@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura-8cm-1" language="groovy" pageWidth="226" pageHeight="421" columnWidth="226" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="60b2cb0e-4ff7-4ab2-99e3-b3ae725b1333">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="97" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="226" height="78" isRemoveLineWhenBlank="true" forecolor="#FFFFFF" backcolor="#CCCCCC" uuid="be5901e4-238e-4bf7-9afb-f6fce8b8bdf1"/>
+			</rectangle>
+			<image>
+				<reportElement x="13" y="10" width="62" height="29" uuid="e056885d-5bbe-47a5-8923-eee335fb6788"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{logoTipoFormatoDataImageBase64}.getBytes()))]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="90" y="1" width="127" height="14" uuid="7c95f0eb-74c8-492b-8f58-4f3b1e478703"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Verdana" size="4" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{enderecoContribuinte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="15" width="115" height="10" uuid="991aef8e-0225-4d36-8de3-567bd7c4ebb0"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{localizacaoContribuinte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="89" y="26" width="41" height="10" uuid="5acc3670-9d70-42d9-8e1f-1e1d6eef1f83"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<text><![CDATA[Telef.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="126" y="26" width="91" height="10" uuid="547a79cf-e9e6-4fc5-8b6b-b1bd6229699d"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nrTelefonesContribuinte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="36" width="36" height="10" uuid="fda72383-d9c2-45af-98c7-cf36b019b792"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<text><![CDATA[NUEL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="36" width="87" height="10" uuid="698439aa-8394-4359-93e2-2eb111a68a1a"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nrMatriculaContribuinte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="91" y="46" width="35" height="10" uuid="65f819bc-2942-4ec0-b70f-c0a01652672d"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="46" width="87" height="10" uuid="8d7b1897-37a9-4028-b2fb-8387d31a7d93"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{emailContribuinte}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="56" width="36" height="10" uuid="490fe55f-f71e-4904-8596-b0666baa8348"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<text><![CDATA[Website:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="56" width="87" height="10" uuid="6766ac30-90e3-4cdb-be4d-7f28cb426813"/>
+				<textElement>
+					<font fontName="Verdana" size="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{websiteContribuinte}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="97" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

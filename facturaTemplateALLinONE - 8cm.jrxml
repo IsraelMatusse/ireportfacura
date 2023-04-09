@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report4" language="groovy" pageWidth="226" pageHeight="421" whenNoDataType="AllSectionsNoDetail" columnWidth="206" leftMargin="0" rightMargin="20" topMargin="20" bottomMargin="20" uuid="efc7f5ad-93fa-4e8c-ae7a-b0204dfbaa02">
-	<property name="ireport.zoom" value="1.6934217901613358"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report4" language="groovy" pageWidth="226" pageHeight="113" whenNoDataType="AllSectionsNoDetail" columnWidth="226" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="efc7f5ad-93fa-4e8c-ae7a-b0204dfbaa02">
+	<property name="ireport.zoom" value="2.4793388429752157"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="144"/>
 	<parameter name="enderecoContribuinte" class="java.lang.String"/>
 	<parameter name="localizacaoContribuinte" class="java.lang.String"/>
 	<parameter name="nrTelefonesContribuinte" class="java.lang.String"/>
@@ -118,20 +118,20 @@
 	<pageHeader>
 		<band height="167" splitType="Stretch">
 			<rectangle>
-				<reportElement mode="Transparent" x="0" y="-25" width="225" height="58" forecolor="#FFFFFF" uuid="fc905da2-9e4d-4c9b-9f32-108d437a652e"/>
+				<reportElement mode="Transparent" x="0" y="-3" width="225" height="52" forecolor="#FFFFFF" uuid="fc905da2-9e4d-4c9b-9f32-108d437a652e"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="1" y="-25" width="226" height="78" isRemoveLineWhenBlank="true" forecolor="#FFFFFF" backcolor="#CCCCCC" uuid="bcce5325-24b4-4703-98d6-ec103bc5d793"/>
+				<reportElement x="0" y="-3" width="227" height="55" isRemoveLineWhenBlank="true" forecolor="#FFFFFF" backcolor="#CCCCCC" uuid="bcce5325-24b4-4703-98d6-ec103bc5d793"/>
 			</rectangle>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="110" y="-11" width="109" height="14" uuid="8b9fc62e-04af-416f-93e1-e89d337a3cd8"/>
+				<reportElement stretchType="RelativeToBandHeight" x="113" y="3" width="105" height="10" uuid="8b9fc62e-04af-416f-93e1-e89d337a3cd8"/>
 				<textElement verticalAlignment="Bottom">
 					<font fontName="Verdana" size="4" isStrikeThrough="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{enderecoContribuinte}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="110" y="3" width="109" height="10" uuid="2d7265b5-e06d-4c17-8191-fdb4a099f981"/>
+				<reportElement x="110" y="3" width="105" height="10" uuid="2d7265b5-e06d-4c17-8191-fdb4a099f981"/>
 				<textElement>
 					<font fontName="Verdana" size="4"/>
 				</textElement>
@@ -180,7 +180,7 @@
 				<text><![CDATA[Email:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="7" y="55" width="218" height="13" uuid="7fbc38cc-f0bd-4c3d-83ca-3142311cbb98"/>
+				<reportElement x="7" y="53" width="218" height="15" uuid="7fbc38cc-f0bd-4c3d-83ca-3142311cbb98"/>
 				<textElement>
 					<font fontName="Verdana" size="4"/>
 				</textElement>
@@ -281,7 +281,7 @@
 				<text><![CDATA[Website:]]></text>
 			</staticText>
 			<image>
-				<reportElement x="7" y="-11" width="55" height="44" uuid="b584f492-e634-4c79-9222-57c40e61f3ff"/>
+				<reportElement x="9" y="3" width="63" height="36" uuid="b584f492-e634-4c79-9222-57c40e61f3ff"/>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{logoTipoFormatoDataImageBase64}.getBytes()))]]></imageExpression>
 			</image>
 			<textField>
@@ -528,7 +528,7 @@
 				<reportElement x="0" y="89" width="227" height="8" backcolor="#000000" uuid="d9a30d5f-3a9c-4097-8019-c09f83d3e261"/>
 			</rectangle>
 			<textField>
-				<reportElement x="5" y="0" width="100" height="10" uuid="e7bc0797-b62b-4619-8676-c0ac5e0e65e6"/>
+				<reportElement x="5" y="0" width="116" height="10" uuid="e7bc0797-b62b-4619-8676-c0ac5e0e65e6"/>
 				<textFieldExpression><![CDATA[$P{tipoDocumento}]]></textFieldExpression>
 			</textField>
 		</band>
